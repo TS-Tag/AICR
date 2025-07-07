@@ -1,0 +1,9 @@
+/index.html  
+/about.html  
+/css/style.css  
+/js/app.js  
+/products.csv  
+/images/logo.png  
+/images/banner.jpg  
+/images/partners/partner1.png …  
+/favicon.ico

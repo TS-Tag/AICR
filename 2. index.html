@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-lang="home">Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="/"><img src="images/logo.png" alt="Al Ahliya INT."></a>
+    <div class="controls">
+      <button id="lang-toggle">EN</button>
+      <button id="theme-toggle">🌙</button>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav id="site-nav">
+      <ul class="nav-links">
+        <li><a href="#" data-lang="home" onclick="scrollToTop()"></a></li>
+        <li><a href="about.html" target="_blank" data-lang="about"></a></li>
+      </ul>
+    </nav>
+    <div class="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="filters">
+      <select id="category-filter"><option value="" data-lang="category"></option></select>
+      <input type="text" id="search-input" placeholder="" data-lang="search">
+      <select id="price-sort">
+        <option value="" data-lang="filters"></option>
+        <option value="asc">Low → High</option>
+        <option value="desc">High → Low</option>
+      </select>
+    </section>
+
+    <section id="products-grid" class="grid"></section>
+  </main>
+
+  <footer>
+    <p><strong data-lang="contact"></strong>: info@alahliyaint.kw | +965 1234 5678</p>
+    <p>Address: Al Ahliya INT., Kuwait City, Kuwait</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
